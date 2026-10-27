@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation and troubleshooting
+    url: https://vakago.github.io/ai-horizon-fixer-for-premiere/docs/support.html
+    about: Check common problems and what to include in a report.
+  - name: Private, purchase or account support
+    url: https://vakago-tools.com/contact/
+    about: Contact Vakago Tools privately. Do not post license keys or private media in public issues.

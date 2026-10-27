@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible problem with AI Horizon Fixer.
+title: '[Bug] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues first. Reports are public. Remove private media, personal data and license keys.
+        For purchase or account help, use https://vakago-tools.com/contact/.
+  - type: input
+    id: extension
+    attributes:
+      label: Extension version and edition
+      description: Include the version and whether this is current AI Horizon Fixer UXP or legacy Horizon Fixer.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Premiere and computer
+      description: Premiere version, OS version, processor architecture, and GPU model if relevant. Include GPU or CPU processing choice.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where does the problem happen?
+      options:
+        - Installation or opening the panel
+        - At playhead
+        - Selected clips
+        - Auto
+        - Preview / Manual Rotation
+        - Reset rotation & scale
+        - Legacy edition or another workflow
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the target clip and actions, in order.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+      description: What did you expect? What happened? Copy the exact message if available, and say whether any edit was applied.
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings and clip details
+      description: Include Add keyframe, Auto-fill/Zoom, Framing, sampling/smoothing, resolution, frame rate, speed changes, overlays and existing Motion animation where relevant.
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or non-confidential example
+      description: Optional. Show the panel and relevant timeline or Motion controls. Use private support for confidential material.

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <style>
+      .page-header {
+        padding: 2rem 1rem;
+      }
+      .project-name {
+        margin: 0 0 0.5rem;
+        font-size: 2rem;
+      }
+      .project-name a {
+        color: inherit;
+      }
+      .page-header .btn {
+        margin: 0.25rem;
+      }
+      .doc-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+      }
+      .doc-nav [aria-current='page'] {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .main-content {
+        overflow-wrap: anywhere;
+      }
+      .main-content table {
+        width: 100%;
+      }
+      a:focus-visible {
+        outline: 3px solid #0969da;
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to content</a>
+    <header class="page-header">
+      <p class="project-name"><a href="{{ '/' | relative_url }}">AI Horizon Fixer</a></p>
+      <p>User documentation for Adobe Premiere</p>
+      <a class="btn" href="{{ site.download_url }}">Download on Adobe Exchange</a>
+      <a class="btn" href="{{ site.product_url }}">Official product page</a>
+    </header>
+    <main id="content" class="main-content">
+      <nav class="doc-nav" aria-label="Documentation">
+        {% for item in site.navigation %} {% if page.url == item.url %}
+        <a href="{{ item.url | relative_url }}" aria-current="page">{{ item.title }}</a>
+        {% else %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endif %} {% endfor %}
+      </nav>
+      {{ content }}
+      <footer class="site-footer">
+        <p>
+          Documentation and support for a proprietary extension by
+          <a href="{{ site.company_url }}">Vakago Tools</a>.
+        </p>
+        <p>
+          <a href="{{ site.issues_url }}">GitHub Issues</a> ·
+          <a href="https://vakago-tools.com/contact/">Private support</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

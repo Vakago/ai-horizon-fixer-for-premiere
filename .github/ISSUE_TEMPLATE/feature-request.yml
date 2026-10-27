@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement to AI Horizon Fixer or its documentation.
+title: '[Feature] '
+body:
+  - type: markdown
+    attributes:
+      value: Search existing requests first. Describe your editing goal. Requests do not imply a delivery commitment.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Explain your workflow and why it is difficult today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested improvement
+      description: Describe the behavior that would help and give a concrete example.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround and context
+      description: Include your edition/version and any alternative you use now.

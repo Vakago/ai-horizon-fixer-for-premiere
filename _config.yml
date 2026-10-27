@@ -1,0 +1,42 @@
+title: AI Horizon Fixer documentation
+description: Practical guides and issue tracking for the AI Horizon Fixer extension for Adobe Premiere by Vakago Tools.
+lang: en
+url: https://vakago.github.io
+baseurl: /ai-horizon-fixer-for-premiere
+repository: Vakago/ai-horizon-fixer-for-premiere
+theme: jekyll-theme-cayman
+show_downloads: false
+product_url: https://vakago-tools.com/ai-horizon-fixer/
+download_url: https://exchange.adobe.com/apps/cc/d4a30c97/vakago-ai-horizon-fixer-for-premiere
+company_url: https://vakago-tools.com/
+issues_url: https://github.com/Vakago/ai-horizon-fixer-for-premiere/issues
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+relative_links:
+  enabled: true
+  collections: false
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+navigation:
+  - title: Overview
+    url: /
+  - title: Get started
+    url: /docs/getting-started.html
+  - title: Workflows
+    url: /docs/workflows.html
+  - title: Settings
+    url: /docs/settings.html
+  - title: Compatibility
+    url: /docs/compatibility.html
+  - title: Help and issues
+    url: /docs/support.html
+exclude:
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - vendor
